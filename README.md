@@ -1,4 +1,3 @@
-```markdown
 # Number Guesser Game
 
 A clean, modular Python implementation of the classic Number Guesser game. 

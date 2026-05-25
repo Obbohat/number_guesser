@@ -10,3 +10,11 @@ env/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
+
+# PyInstaller Build Artifacts
+build/
+dist/
+*.spec
+
+# Game Data (Optional: ignore local leaderboards so everyone starts fresh)
+leaderboard.json

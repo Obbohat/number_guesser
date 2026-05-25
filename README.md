@@ -1,19 +1,23 @@
-# Number Guesser Game
+# Number Guesser Pro
 
-A clean, modular Python implementation of the classic Number Guesser game. 
+A clean, modular Python implementation of the classic Number Guesser game, featuring a sleek desktop GUI and persistent high scores.
 
 ## 🚀 Features
-* **Modular Architecture:** Strict separation of concerns (scoring, validation, generation).
-* **Type Hinting:** Fully typed for a better developer experience and code reliability.
-* **Jupyter Integration:** Play interactively right from your notebook environment in VS Code.
-* **Error Handling:** Robust input validation to prevent unexpected crashes.
+
+- **Graphical User Interface:** Modern, dark-themed desktop app built with Tkinter.
+- **Leaderboard System:** Persistent Top 5 high scores saved locally via JSON.
+- **Modular Architecture:** Strict separation of concerns (scoring, validation, GUI, generation).
+- **Standalone Executable:** Ready to be compiled into a single `.exe` or Linux binary using PyInstaller.
+- **Error Handling:** Robust input validation to prevent unexpected crashes.
 
 ## 📁 Project Structure
+
 ```text
 NUMBER_GUESSER/
-├── hint_generator.py      # Logic for high/low/warm/cold hints
-├── input_validator.py     # Ensures robust user input handling
-├── main.ipynb             # Interactive Jupyter entry point
-├── main.py                # CLI entry point and game loop orchestration
-├── number_generator.py    # Target number creation
-└── scorer.py              # Point calculation logic
+├── hint_generator.py        # Logic for high/low/warm/cold hints
+├── leaderboard_manager.py   # Handles saving/loading JSON high scores
+├── main_gui.py              # Main desktop application and GUI loop
+├── number_generator.py      # Target number creation
+├── scorer.py                # Point calculation logic
+└── leaderboard.json         # Auto-generated file storing player records
+```
